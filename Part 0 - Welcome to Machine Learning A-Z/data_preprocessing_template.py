@@ -9,7 +9,6 @@ import pandas as pd
 dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
-np.set_printoptions(threshold = np.nan)
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
